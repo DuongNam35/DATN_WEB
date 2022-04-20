@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e2db74ebd5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+</head>
+<style>
+    body, header{
+        font-family: 'Times New Roman', Times, serif;
+    }
+    header h4{
+        background-color: #AAA;
+    }
+    header{
+        margin-bottom: 30px;
+    }
+</style>
+<header style="text-align: center;">
+    <h4 style="font-size: 60px;">
+        Category
+    </h4>
+</header>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="tiltel-one">
+                    <h4 class="title_name_one">Restaurant</h4>
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam rerum, corrupti fuga earum ipsum
+                        eveniet quaerat repellat pariatur quod delectus autem iste aliquam tenetur quos consequatur,
+                        sint, voluptates cumque modi?</span>
+                    <a href="{% url 'chat' %}"><button class="btn-learn">Learn Now -></button></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="tiltel-two">
+                    <h4 class="title_name_two">Class</h4>
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam rerum, corrupti fuga earum ipsum
+                        eveniet quaerat repellat pariatur quod delectus autem iste aliquam tenetur quos consequatur,
+                        sint, voluptates cumque modi?</span>
+                    <button class="btn-learn">Learn Now -></button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="tiltel-three">
+                    <h4 class="title_name_three">SuperMarket</h4>
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam rerum, corrupti fuga earum ipsum
+                        eveniet quaerat repellat pariatur quod delectus autem iste aliquam tenetur quos consequatur,
+                        sint, voluptates cumque modi?</span>
+                    <button class="btn-learn">Learn Now -></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .tiltel-one,
+        .tiltel-three,
+        .tiltel-two {
+            margin-top: 10px;
+            border: 1px gray;
+            box-shadow: 1px 1px 1px 2px #AAA;
+            text-align: center;
+        }
+
+        .title_name_one {
+            text-align: center;
+            background-color: #4dbee4;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .title_name_two {
+            text-align: center;
+            background-color: rgb(127, 159, 255);
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .title_name_three {
+            text-align: center;
+            background-color: rgb(238, 255, 127);
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        span {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;
+            display: block;
+        }
+
+        .btn-learn {
+            text-align: center;
+            margin: 0px;
+        }
+    </style>
+</body>
+
+</html>

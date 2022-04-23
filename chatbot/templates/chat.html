@@ -176,7 +176,7 @@
         if (output.value != '') {
             // console.log(output.value);
             var message_user = document.createElement('p');
-            message_user.setAttribute('class','user')
+            message_user.setAttribute('class', 'user')
             var message_user_block = document.createElement('div');
             var mess_text = document.createTextNode(output.value);
             message_user.appendChild(mess_text);
@@ -199,17 +199,19 @@
                     return response.json()
                 })
                 .then(function (data) {
-                    // alert(data[0]["text"])
-                    responsiveVoice.speak(data[0]["text"]);
-                    var message_bot = document.createElement('p');
-                    message_bot.setAttribute('class','bot')
-                    var message_bot_block = document.createElement('div');
-                    // message_bot.setAttribute("id", "first");
-                    var mess_text = document.createTextNode(data[0]["text"]);
-                    message_bot.appendChild(mess_text);
-                    message_bot_block.appendChild(message_bot);
-                    var chatbox = document.getElementById('chatbox');
-                    chatbox.appendChild(message_bot_block);
+                    // alert(data[1]["text"])
+                    for (let i = 0; i < data.length; i++) {
+                        responsiveVoice.speak(data[i]["text"]);
+                        var message_bot = document.createElement('p');
+                        message_bot.setAttribute('class', 'bot')
+                        var message_bot_block = document.createElement('div');
+                        // message_bot.setAttribute("id", "first");
+                        var mess_text = document.createTextNode(data[i]["text"]);
+                        message_bot.appendChild(mess_text);
+                        message_bot_block.appendChild(message_bot);
+                        var chatbox = document.getElementById('chatbox');
+                        chatbox.appendChild(message_bot_block);
+                    }
                 })
             output.value = '';
         }
